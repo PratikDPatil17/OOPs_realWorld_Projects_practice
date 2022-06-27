@@ -1,0 +1,57 @@
+!) Get a valid word from given list 
+2) Each player has 5 lives to play
+3) If user guessed a wrong letter reduce 1 live and show hangman_pics bar  
+4) display a secrete word ________ first 
+
+Words
+    init 
+        filename
+        word_list
+
+        select random word
+    choose_random_word
+
+    display
+        display remaining word  =  __E__E__A__R
+
+Hangman
+    init
+        hangman photo
+    draw
+        if incorrect guess == 5 
+            died
+
+Game
+    init
+        initialise objects
+        secrete_word
+        incorrect_guess_num
+        already_guessed
+
+
+    play   
+        CLI
+
+
+
+get_valid_word
+
+display word
+
+Hangman
+    draw hangman
+
+Game
+    play
+        option
+        show rules
+        if incorrect guess show remaining lives
+        guessed letter validation 
+
+        create already_guessed letters
+        if guessed word not in already_guessed
+            display guessed letters ---- __E__E__A__R
+        else:
+            reduce lives and draw hangman
+
+    
